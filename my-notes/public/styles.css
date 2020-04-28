@@ -3,18 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
   font-family: "Montserrat", sans-serif;
 }
-
 body {
   background: #eee;
   padding: 0 16px;
 }
 
 header {
-  background-color: turquoise;
+  background-color: #f5ba13;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -37,7 +35,6 @@ footer {
 footer p {
   color: #ccc;
 }
-
 .note {
   background: #fff;
   border-radius: 7px;
@@ -47,12 +44,10 @@ footer p {
   margin: 16px;
   float: left;
 }
-
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
-
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
