@@ -1,19 +1,31 @@
 {
-  "name": "keeper",
+  "name": "keeper-app",
   "version": "1.0.0",
-  "description": "an app like google keep",
-  "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nazim806/keeper.git"
   },
-  "author": "Nazim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nazim806/keeper/issues"
-  },
-  "homepage": "https://github.com/nazim806/keeper#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
