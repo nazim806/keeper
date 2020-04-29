@@ -4,4 +4,4 @@ An app like google keep where you can save your ideas. It allows users to make d
 
 images, and audio notes.
 
-React.js
+Technology: React.js
