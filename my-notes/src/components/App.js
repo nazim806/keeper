@@ -6,21 +6,21 @@ import notes from "../notes";
 
 // import { Content } from 'react-mdl';
 
-function createNotes(noteItem) {
-  return (
-    <Note
-      key={noteItem.key}
-      title={noteItem.title}
-      content={noteItem.content}
-    />
-  );
-}
-
 function App() {
   return (
     <div>
       <Header />
-      {notes.map(createNotes)}
+
+      {notes.map((noteItem) => 
+        
+          <Note
+            key={noteItem.key}
+            title={noteItem.title}
+            content={noteItem.content}
+          />
+        
+    )}
+
       <Footer />
     </div>
   );
