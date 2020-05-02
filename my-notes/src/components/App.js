@@ -10,10 +10,14 @@ import CreateArea from "./CreateArea";
 function App() {
   const [notes, setNotes] = useState([]);
 
-  function addNote(note) {
+  function addNote(newNote) {
     setNotes((prevNotes) => {
-      return [...prevNotes, note];
+      return [...prevNotes, newNote];
     });
+  }
+
+  function deleteNote(id) {
+    console.log("Delete was triggered")
   }
 
   return (
@@ -21,7 +25,13 @@ function App() {
       <Header />
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem) => {
-        return <Note title={noteItem.title} content={noteItem.content} />;
+        return (
+          <Note
+            title={noteItem.title}
+            content={noteItem.content}
+            onDelete={deleteNote}
+          />
+        );
       })}
 
       <Footer />
